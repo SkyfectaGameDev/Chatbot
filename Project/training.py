@@ -15,3 +15,11 @@ nltk.download('omw-1,4')
 lemmatizer = nltk.WordNetLemmatizer()
 
 intents = json.loads(open('data.json').read())
+
+words = []
+classes = []
+documents = []
+ignore_letters = ['!', '?', ',', '.', '-', '_', '/', '\'']
+
+for intent in intents['intents']:
+    
