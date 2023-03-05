@@ -1,0 +1,51 @@
+{
+    "intents": [
+        {
+            "tag": "greeting",
+            "patterns": [
+                "hi",
+                "hello",
+                "How are you today",
+                "what's up"
+            ],
+            "responses": [
+                "Hello there",
+                "Good to see you",
+                "Nice to see you"
+            ]
+        }, 
+        {
+            "tag": "farewell",
+            "patterns": [
+                "goodbye",
+                "bye",
+                "farewell"
+            ],
+            "responses": [
+                "See you soon!",
+                "Goodbye!",
+                "Cya!"
+            ]
+        },
+        {
+            "tag": "jokes",
+            "patterns": [
+                "be funny",
+                "tell me a joke",
+                "make me laugh"
+            ],
+            "responses": [
+                "What do you call Batman leaving church early?... A Christian Bale."
+            ]
+        },
+        {
+            "tag": "hal",
+            "patterns": [
+                "open the pod bay doors"
+            ],
+            "responses": [
+                "I'm afraid I can't do that..."
+            ]
+        }
+    ]
+}
