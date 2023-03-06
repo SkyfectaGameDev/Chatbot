@@ -51,3 +51,20 @@ for document in documents:
     output_row[classes.index(document[1])] = 1
     training.append([bag, output_row])
 
+random.shuffle(training)
+training = np.array(training, dtype=object)
+
+train_x = list(training[:, 0])
+train_y = list(training[:, 1])
+
+model = tf.keras.Sequential()
+model.add(tf.keras.layers.Dense(128, input_shape=(len(train_x[0]),), activation='relu'))
+model.add(tf.keras.layers.Dropout(0.5))
+model.add(tf.keras.layers.Dense(64, activation='relu'))
+model.add(tf.keras.layers.Dropout(0.5))
+model.add(tf.keras.layers.Dense(len(train_y[0]), activation='softmax'))
+
+sgd = tf.keras.optimizers.legacy.SGD(lr=0.01, decay=1e-6, momentum=0.9, nesterov=True)
+model.compile(loss='categorical_crossentropy', optimizer=sgd, metrics=['accuracy'])
+history = model.fit(np.array(train_x), np.array(train_y), epochs=100, batch_size=64, verbose=1)
+model.save('chatbot_model.model', history)
