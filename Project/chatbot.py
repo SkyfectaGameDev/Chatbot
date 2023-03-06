@@ -50,10 +50,10 @@ def get_response(intents_list, intents_json):
             break
     return result
 
-print("Chatbot is running, come say hello...")
-while True:
-    message = input("")
-    message = message.lower()
-    ints = predict_class(message)
-    res = get_response(ints, intents)
-    print(res)
+# print("Chatbot is running, come say hello...")
+# while True:
+#     message = input("")
+#     message = message.lower()
+#     ints = predict_class(message)
+#     res = get_response(ints, intents)
+#     print(res)

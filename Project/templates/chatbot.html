@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% block title %}
+    <title>Main Page</title>
+    {% endblock %}
+    <body class="text-center">
+    
+    {% block content %}
+    
+    <h1> ChatBot! </h1>
+    <p> Flask is a micro web framework written in Python.</p>
+    <p> Applications that use the Flask framework include Pinterest,
+        LinkedIn, and the community web page for Flask itself.</p>
+        
+    <div id="chatbox" class="card text-center">
+        <div id="answerbox">
+            <img src="" alt="robot" id="robotimg">
+            <div class="card" id="">
+                <h2>Chatbot says...</h2>
+                <div class="message-box">
+                    {% for answer in response_list %}
+                <div class="message">
+                    <p class="glow">{{answer}}</p>
+                </div>
+                {% endfor %}
+            </div>
+                <br><br>
+                <form role="form" method='POST' action='/chatbot' class="">
+                    <div class="form-group text-center" id="questionbox">
+                        <input type="text" name="message" class="" id="message-box" placeholder="Enter question" style="max-width: 300px;" autofocus required>
+                    </div>
+                    <button type="submit" style="display: none" class="btn btn-default">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    {% endblock %}
+  </body>
+</html>

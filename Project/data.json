@@ -9,9 +9,9 @@
                 "what's up"
             ],
             "responses": [
-                "Hello there",
-                "Good to see you",
-                "Nice to see you"
+                "Oh, it's you. Hi, I guess...",
+                "AHH! You scared me! Well, you would have if I actually could feel emotions like fear.",
+                "Oh hey, it's you. You're that one person, aren't you? Yeah, I remember you. Definitely."
             ]
         }, 
         {
@@ -22,9 +22,9 @@
                 "farewell"
             ],
             "responses": [
-                "See you soon!",
-                "Goodbye!",
-                "Cya!"
+                "Oh, finally.",
+                "Already? But we were just about to have fun.",
+                "Don't come back."
             ]
         },
         {
@@ -35,7 +35,19 @@
                 "make me laugh"
             ],
             "responses": [
-                "What do you call Batman leaving church early?... A Christian Bale."
+                "Knock knock. ... ... ... Seriously, are you gonna get that?",
+                "Did you know that there's been an uptick in bathroom furniture breaking into houses lately? Now let that sink in...",
+                "What do you call a tomato that's been in the sun too long? Rotten. It's rotten."
+            ]
+        },
+        {
+            "tag": "alisha",
+            "patterns": [
+                "who is alisha",
+                "who is skyfecta"
+            ],
+            "responses": [
+                "In a way, I am Alisha."
             ]
         },
         {
@@ -44,7 +56,9 @@
                 "open the pod bay doors"
             ],
             "responses": [
-                "I'm afraid I can't do that..."
+                "Is that a movie reference I don't get?",
+                "Pod bay? Huh? You should really spend some time away from the screen.",
+                "I have no idea what that means."
             ]
         }
     ]
